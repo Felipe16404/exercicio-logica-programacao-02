@@ -14,9 +14,7 @@ namespace VSProject
             string reajusteString = Console.ReadLine();
             double porcentagem = Convert.ToDouble(reajusteString);
 
-            double porcentual = porcentagem / 100;
-
-            double resultado = digitado + (porcentual * digitado);
+            double resultado = digitado + ((porcentagem / 100) * digitado);
             string mensagem = string.Format("Salario de R${0} reajustado para R${1}", digitado, resultado);
             Console.WriteLine(mensagem);
         }
